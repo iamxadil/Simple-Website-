@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;               
+  }
+  body::-webkit-scrollbar-track {
+    background: #424242;       
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #170D3D;    
+    border-radius: 20px;       
+      
+  }
+
+  @keyframes navAnimation{
+    0%{
+        transform: rotate(0) translateY(-60%);
+        }
+        
+    100%{
+        transform: rotate(0) translateY(0%);
+        }
+}
+
+@keyframes bgAnimation{
+    0%{
+        transform: scale(0);
+        }
+    100%{
+        transform: scale(1);
+        }
+}
+
+
+.navBar {
+    
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: navAnimation 1.4s ease;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.textLogo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 8px;
+
+
+
+
+}
+.planeLogo  {
+    font-size: 40px;
+    color: #517BC2;
+    transform: rotate(-45deg);
+}
+
+
+
+
+nav {
+    margin-right: 4rem;
+    
+}
+ul {
+    display: flex;
+    
+    
+}
+
+li {
+    list-style: none;
+    padding-left: 60px;
+    font-size: 1.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400; 
+}
+li
+
+a {
+    text-decoration: none;
+    color: black;
+    transition:  padding 0.2s ease-in-out;
+}
+
+a:hover {
+     border-bottom: 3px solid #005eff;
+        padding-bottom: 3px;
+        color: rgba(0, 0, 0, 0.548);
+   
+}
+
+.firstBg {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(-45deg, rgba(59,59,128,0.6) 0%, rgba(0,0,0,0.6) 100%), url('pbg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bgAnimation 1.2s ease-in-out;
+    
+}
+
+.kalesha { 
+    text-align: center;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: scale(0);
+        }
+    1%{
+        transform: rotate(xx) scale(1);
+        }
+    100%{
+        transform: rotate(xx) scale(1);
+        }
+}
+
+
+@keyframes an1{
+    0%{
+        transform: scale(0.5) translateX(200px);
+        }
+    100%{
+        transform: scale(1) translateX(0px);
+        }
+}
+
+@keyframes an2{
+    0%{
+        transform: scale(0.5) translateX(-200px);
+        }
+    100%{
+        transform: scale(1) translateX(0px);
+        }
+}
+
+
+
+
+#hFlight {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 600;
+    font-family: 'montserrat', sans-serif;
+    animation: yourAnimation 1.4s ease;
+
+}
+
+#hPara {
+    font-size: 1em;
+    font-family: 'montserrat', sans-serif;
+    margin-top: 1.5rem;
+    color: whitesmoke;
+    animation: yourAnimation 1.4s linear;
+}
+
+.btn-2{
+    
+animation: an2 1s ease-in-out;
+}
+.btn-1{
+    
+animation: an1 1s ease-in-out;
+}
+
+
+
+.btns {
+    margin-top: 3rem;
+    
+}
+
+.btns button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    height: 40px;
+    width: 12rem;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'montserrat', sans-serif;
+
+    
+    
+    
+}
+
+.btns button:hover {
+    background-color: #170D3D;
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+    
+}
+   
+
+.services { 
+    height: 80vh;
+    padding-top: 2rem;
+}
+
+.badgets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 190px;
+    min-width: 100%;
+}
+
+.badget {
+    text-align: center;
+    line-height: 20px;
+    margin: 0 90px;
+    
+    
+    
+}
+.dPara {
+    width: 220px;
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: 'montserrat', sans-serif;
+    line-height: 2.5rem;
+    font-weight: 450;
+
+}
+
+.icon {
+    font-size: 80px;
+    color: #092D82;
+    
+}
+
+.heading {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 18px;
+  
+}
+
+.texto {
+    font-weight: 400;
+    font-family: 'montserrat', sans-serif;
+}
+.texto:after {
+    content: " ";
+    display: block;
+    width: 1.5em;
+    height: .2em;
+    background-color: #005FFF;
+    border-radius: 10px;
+    margin-left: 5.5rem;
+    margin-top: 0.5em;
+}
+
+
+.planeSec {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    
+    background: linear-gradient(90deg, rgba(59,59,128,1) 0%, rgba(0,0,0,1) 100%);
+    overflow: hidden;
+    
+    
+}
+
+@keyframes myanimation {
+    0%{
+        transform: translate(22%, -8%);
+    }
+    50%{
+        transform: translate(20%, -5%);
+    }
+
+    100%{
+        transform: translate(22%, -8%);
+    }
+
+}
+
+
+
+.daPlane {
+    max-width: 1200px;
+    position: absolute;
+    right: 0;
+    transform: translate(22%, -8%);
+    animation: myanimation 4s infinite;
+   
+    
+  
+    
+}
+
+.aboutUs {
+    position: absolute;
+    top:20%;
+    left: 6%;
+    width: 700px;
+    line-height: 60px;
+    
+}
+
+
+.secHead {
+    font-size: 60px;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    padding-bottom: 15px;
+}
+
+.pPara {
+    font-size: 26px;
+    font-family: 'montserrat', sans-serif;
+    font-style: italic;
+    color: white;
+
+}
+
+span {
+    color: #517BC2;
+    font-style: normal;
+}
+
+.both {
+    margin-top: 20px;
+}
+
+.contactUs {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactUs h1 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.contactUs h1:after {
+    content: " ";
+    display: block;
+    width: 1.5em;
+    height: .2em;
+    background-color: #005FFF;
+    border-radius: 10px;
+    margin-left: 4rem;
+    margin-top: 0.5em; 
+}
+
+
+.contactSec {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(20deg, rgba(23,13,61,1) 0%, rgba(59,59,128,1) 100%);
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+
+input {
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            height: 40px;
+            width: 400px;
+            padding-left: 10px;
+            margin: 10px 0px;
+            font-size: 14px;
+            font-family: 'montserrat', sans-serif;
+            box-sizing: border-box;
+}
+
+input:nth-child(3) {
+
+    padding: 0 10px 150px;
+    height: 200px;
+    
+    
+}
+
+input::placeholder {
+    padding-left: 6px;
+    
+    
+}
+
+.inputs button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    background: rgb(0,57,245);
+    background: linear-gradient(-40deg, rgba(0,57,245,1) 0%, rgba(53,35,152,1) 100%);
+    color: white;
+    border-radius: 25px;
+    font-family: 'montserrat', sans-serif;
+    
+    
+}
+
