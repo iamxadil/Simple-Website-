@@ -438,11 +438,12 @@ input::placeholder {
 
 .socialMedia {
     position: fixed;
-    left: 4px;
+    left: 6px;
     top: 42%;
     display: flex;
     flex-direction: column;
     z-index: 2;
+    animation: sideBar 1.6s ease;
        
     
     
@@ -483,6 +484,11 @@ input::placeholder {
     margin-left: 16px;
     transition: color ease-out 0.7s;
     
+    
+}
+
+.decoration {
+     text-decoration: none;
 }
 
 
@@ -515,3 +521,14 @@ input::placeholder {
 }
 
 
+@keyframes sideBar {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+
+        transform: translateX(0px);
+
+    }
+}
