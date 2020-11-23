@@ -46,7 +46,14 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     animation: navAnimation 1.4s ease;
     align-items: center;
+    position: relative;
 }
+
+.ham {
+    display: none;
+}
+
+
 
 .logo {
     display: flex;
@@ -73,24 +80,24 @@ body::-webkit-scrollbar {
 
 
 
-nav {
+.navBar nav {
     margin-right: 4rem;
     
 }
-ul {
+.navBar nav ul {
     display: flex;
     
     
 }
 
-li {
+.navBar nav ul li {
     list-style: none;
     padding-left: 60px;
     font-size: 1.2rem;
     font-family: 'montserrat', sans-serif;
     font-weight: 400; 
 }
-li
+
 
 a {
     text-decoration: none;
@@ -115,6 +122,7 @@ a {
     justify-content: center;
     align-items: center;
     animation: bgAnimation 1.2s ease-in-out;
+    position: relative;
     
 }
 
@@ -215,7 +223,7 @@ animation: an1 1s ease-in-out;
    
 
 .services { 
-    height: 80vh;
+    height: 800px;
     padding-top: 2rem;
 }
 
@@ -278,10 +286,9 @@ animation: an1 1s ease-in-out;
 
 
 .planeSec {
-    height: 70vh;
+    height: 600px;
     width: 100%;
     position: relative;
-    
     background: linear-gradient(90deg, rgba(59,59,128,1) 0%, rgba(0,0,0,1) 100%);
     overflow: hidden;
     
@@ -305,7 +312,7 @@ animation: an1 1s ease-in-out;
 
 
 .daPlane {
-    max-width: 1200px;
+    max-width: 60%;
     position: absolute;
     right: 0;
     transform: translate(22%, -8%);
@@ -320,8 +327,9 @@ animation: an1 1s ease-in-out;
     position: absolute;
     top:20%;
     left: 6%;
-    width: 700px;
+    width: 40%;
     line-height: 60px;
+    z-index: 3;
     
 }
 
@@ -331,6 +339,7 @@ animation: an1 1s ease-in-out;
     color: white;
     font-family: 'montserrat', sans-serif;
     padding-bottom: 15px;
+    text-shadow: 4px 2px 2px #000000;
 }
 
 .pPara {
@@ -338,6 +347,8 @@ animation: an1 1s ease-in-out;
     font-family: 'montserrat', sans-serif;
     font-style: italic;
     color: white;
+    font-size: 24px;
+    text-shadow: 4px 2px 2px #000000;
 
 }
 
@@ -389,7 +400,7 @@ span {
 .inputs {
     display: flex;
     flex-direction: column;
-    margin: 10px 0px;
+    margin: 8px 0px;
     align-items: center;
 }
 
@@ -401,7 +412,7 @@ input {
             height: 40px;
             width: 400px;
             padding-left: 10px;
-            margin: 10px 0px;
+            margin: 8px 0px;
             font-size: 14px;
             font-family: 'montserrat', sans-serif;
             box-sizing: border-box;
@@ -531,4 +542,360 @@ input::placeholder {
         transform: translateX(0px);
 
     }
+}
+
+
+
+
+
+
+
+.Humb {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1203px) {
+
+
+
+
+    .inputs {
+        
+        margin-bottom:120px ;
+        
+    }
+
+    
+
+    .services {
+        height: 1050px;
+        
+    
+      
+        
+    }
+
+    .insta, .github, .twitter, .tumblr  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 40px;
+        width: 20px;
+        overflow: hidden;
+        border-radius: 4px;
+        background-color: rgb(29, 90, 202);
+        transition: all 0.4s ease-out;
+        margin: 2px 0px;
+    
+    }
+    
+    .insta-h, .git-h, .twitter-h, .tumblr-h {
+        font-size: 18px;
+        color: white;
+        font-family: 'montserrat', sans-serif;
+        margin-left: 16px;
+        transition: color ease-out 0.7s;
+        
+        
+    }
+
+    .sc {
+        font-size: 28px;
+    }
+
+    
+
+    .badgets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .badget {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0px;
+    }
+
+    .icon {
+        font-size: 60px;
+        
+    }
+
+    .dPara {
+        font-size: 16px;
+
+    }
+
+    .daPlane {
+        max-width: 80%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        animation: myanimation 4s infinite;
+       
+        
+      
+        
+    }
+    .aboutUs {
+        width: 50%;
+        top:10%;
+    }
+
+    .secHead {
+        font-size: 30px;
+        text-shadow: 2px 4px 5px black;
+        
+    }
+    
+    .pPara {
+        font-size: 24px;
+        text-shadow: 4px 2px 2px #000000;
+    }
+
+
+}
+
+@media only screen and (max-width: 920px) {
+
+
+        #hFlight {
+            font-size: 28px;
+        }
+
+        #hPara {
+            font-size: 12px;
+        }
+        
+        .pPara {
+            font-size: 12px;
+        }
+        .btns button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            height: 30px;
+            width: 10rem;
+            border-radius: 20px;
+            background-color: white;
+            font-size: 18px;
+            font-family: 'montserrat', sans-serif;
+        }
+
+        
+
+    
+    
+    
+
+    
+        .daPlane{
+            display: none;
+        }
+
+        .navBar .firstNav  {
+            display: none;
+        }
+
+        section {
+            position: relative;
+            overflow: hidden;
+            
+            
+        }
+
+        
+        .ham {
+            display: block;
+            margin-right: 24px;
+            font-size: 26px;
+            color: rgb(57, 12, 117);
+            cursor: pointer;
+        }
+
+
+        .Humb {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top:0;
+            right: 0%;
+            background: linear-gradient(341deg, rgba(39,66,154,1) 0%, rgba(33,27,60,1) 100%);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+            transform: translateX(100%);
+            
+            
+        }
+        
+        .Humb nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        
+        .Humb nav ul a {
+            text-decoration: none;
+            color: white;
+            margin: 40px 0px;
+        }
+        
+        .Humb nav ul li {
+            list-style: none;
+            font-family: 'montserrat', sans-serif;
+            padding: 20px 60rem;
+            
+        }
+
+        .Humb nav ul li:hover {
+            background-color: rgb(19, 48, 144);
+        }
+
+        .times {
+            position: absolute;
+            top: 2%;
+            right: 10%;
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        .show {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            right: 0;
+            background: linear-gradient(341deg, rgba(39,66,154,1) 0%, rgba(33,27,60,1) 100%);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+            transform: translateX(0%);
+            z-index: 100;
+            transition: transform 0.4s ease;
+        }
+        
+        
+        .hide {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            right: 0;
+            background: linear-gradient(341deg, rgba(39,66,154,1) 0%, rgba(33,27,60,1) 100%);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+            transform: translateX(100%);
+            z-index: 100;
+            transition: transform 0.4s ease;
+        }
+
+        
+        .aboutUs {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
+            position: absolute;
+             top: 5%;
+             left: 25%;
+             width: 50%; 
+        }
+        .secHead {
+            font-size: 24px;
+            text-shadow: 2px 4px 5px black;
+            
+        }
+        
+        .pPara {
+            font-size: 18px;
+            text-shadow: 4px 2px 2px #000000;
+        }
+
+        .contactSec {
+            height: 60vh;
+        }
+    
+        input {
+            width: 300px;
+        }
+}
+
+@media only screen and (max-width: 720px)  {
+
+    .pPara {
+        font-size: 12px;
+    }
+    .btns button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 4px;
+        height: 30px;
+        width: 9rem;
+        border-radius: 20px;
+        background-color: white;
+        font-size: 18px;
+        font-family: 'montserrat', sans-serif;
+    }
+
+    .contactSec {
+        height: 80vh;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 520px) {
+
+
+    .btns button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 4px;
+        height: 30px;
+        width: 8rem;
+        border-radius: 20px;
+        background-color: white;
+        font-size: 14px;
+        font-family: 'montserrat', sans-serif;
+    }
+
+    .pPara {
+        font-size: 8px;
+    }
+
+    input {
+        width: 240px;
+    }
+
 }
